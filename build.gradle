@@ -1,0 +1,32 @@
+plugins {
+    id 'application'
+    id 'net.ltgt.errorprone' version '3.1.0'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+    errorprone 'com.google.errorprone:error_prone_core:2.38.0'
+    errorprone 'com.uber.nullaway:nullaway:0.12.7'
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs += ['--should-stop=ifError=FLOW']
+    options.errorprone {
+        check("NullAway", net.ltgt.gradle.errorprone.CheckSeverity.ERROR)
+        option("NullAway:AnnotatedPackages", "ncreep")
+    }
+}
+
+application {
+    mainClass = project.findProperty("main").toString()
+}
