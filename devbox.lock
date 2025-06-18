@@ -1,0 +1,134 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2025-06-14T12:19:57Z",
+      "resolved": "github:NixOS/nixpkgs/41da1e3ea8e23e094e5e3eeb1e6b830468a7399e?lastModified=1749903597&narHash=sha256-jp0D4vzBcRKwNZwfY4BcWHemLGUs4JrS3X9w5k%2FJYDA%3D"
+    },
+    "gradle@latest": {
+      "last_modified": "2025-05-25T15:24:27Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/bdac72d387dca7f836f6ef1fe547755fb0e9df61#gradle",
+      "source": "devbox-search",
+      "version": "8.14.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/w0p0iawbaijhdlxhnim3n3bpd6h7rfbv-gradle-8.14.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/w0p0iawbaijhdlxhnim3n3bpd6h7rfbv-gradle-8.14.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mpalll16ml1ccj5xic7vkk4flx81l9gh-gradle-8.14.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mpalll16ml1ccj5xic7vkk4flx81l9gh-gradle-8.14.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ah2v63q2y2l6rzlpcdhwp8zziyja79d9-gradle-8.14.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ah2v63q2y2l6rzlpcdhwp8zziyja79d9-gradle-8.14.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kqirldzmp239c86scv4lb0abdfd8zp5d-gradle-8.14.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kqirldzmp239c86scv4lb0abdfd8zp5d-gradle-8.14.1"
+        }
+      }
+    },
+    "jdk21@latest": {
+      "last_modified": "2024-10-13T23:44:06Z",
+      "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#jdk",
+      "source": "devbox-search",
+      "version": "21.0.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0q256qa09wnplr1fs9c24fm59mn8l76n-zulu-ca-jdk-21.0.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0q256qa09wnplr1fs9c24fm59mn8l76n-zulu-ca-jdk-21.0.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2x7xn14k5cvrh5j0hvw7v8j9zfp5hlln-zulu-ca-jdk-21.0.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2x7xn14k5cvrh5j0hvw7v8j9zfp5hlln-zulu-ca-jdk-21.0.2"
+        }
+      }
+    },
+    "jdt-language-server@latest": {
+      "last_modified": "2025-06-01T15:36:18Z",
+      "resolved": "github:NixOS/nixpkgs/5929de975bcf4c7c8d8b5ca65c8cd9ef9e44523e#jdt-language-server",
+      "source": "devbox-search",
+      "version": "1.47.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gng2s6akgh302lv699jxp8lcix285y2l-jdt-language-server-1.47.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gng2s6akgh302lv699jxp8lcix285y2l-jdt-language-server-1.47.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z1v5jp16vw9vpkypbaaqbwdl0n797nga-jdt-language-server-1.47.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/z1v5jp16vw9vpkypbaaqbwdl0n797nga-jdt-language-server-1.47.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/720s7z99mh0885zl0zyj3rfh45vr96q3-jdt-language-server-1.47.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/720s7z99mh0885zl0zyj3rfh45vr96q3-jdt-language-server-1.47.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i5nhvz03k22rwmynf8009m6z2k7lc961-jdt-language-server-1.47.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/i5nhvz03k22rwmynf8009m6z2k7lc961-jdt-language-server-1.47.0"
+        }
+      }
+    }
+  }
+}
