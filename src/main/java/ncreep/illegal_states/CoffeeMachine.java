@@ -6,22 +6,15 @@ import javax.annotation.Nonnull;
 
 public class CoffeeMachine {
   public void prepare(CoffeeOrder order) {
-    switch (order.drinkType()) {
-      case CAPPUCCINO -> throwNotImplemented();
-      case ESPRESSO -> throwNotImplemented();
-      case LATTE -> throwNotImplemented();
-      case AFFOGATO -> throwNotImplemented();
-      case IRISH_COFFEE -> {
-        // This is SAFE
-        // Irish coffee ALWAYS has cream and whiskey
-        if (order.cream() == null)
-          throw new IllegalStateException("No cream");
-        if (order.whiskey() == null)
-          throw new IllegalStateException("No whiskey");
-
+    switch (order) {
+      case CoffeeOrder.Cappuccino cappuccino -> throwNotImplemented();
+      case CoffeeOrder.Espresso espresso -> throwNotImplemented();
+      case CoffeeOrder.Latte latte -> throwNotImplemented();
+      case CoffeeOrder.Affogato affogato -> throwNotImplemented();
+      case CoffeeOrder.IrishCoffee irishCoffee -> {
         prepareIrishCoffee(
-            order.cream(),
-            order.whiskey());
+            irishCoffee.cream(),
+            irishCoffee.whiskey());
       }
     }
   }
