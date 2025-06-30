@@ -2,7 +2,8 @@ package ncreep.illegal_states;
 
 public class Main {
   public static void main(String[] args) {
-    var processor = new OrderProcessor();
+    var whiskeyService = new WhiskeyServiceDefault();
+    var processor = new OrderProcessor(whiskeyService);
     var coffeeMaker = new CoffeeMachine();
 
     var dto1 = new CoffeeOrderDTO(

@@ -4,6 +4,12 @@ import javax.annotation.Nonnull;
 
 public class OrderProcessor {
 
+  private final WhiskeyService whiskeyService;
+
+  public OrderProcessor(WhiskeyService whiskeyService) {
+    this.whiskeyService = whiskeyService;
+  }
+
   public CoffeeOrder process(@Nonnull CoffeeOrderDTO order) {
     var drinkType = order.drinkType() == null ? DrinkType.CAPPUCCINO : order.drinkType();
 
@@ -22,7 +28,7 @@ public class OrderProcessor {
         null,
         null,
         order.cream() == null ? Cream.HALF_AND_HALF : order.cream(),
-        order.whiskey() == null ? Whiskey.JAMESON : order.whiskey());
+        order.whiskey() == null ? whiskeyService.fetchTodayDefaultWhiskey() : order.whiskey());
   }
 
   private CoffeeOrder processCappuccino(CoffeeOrderDTO order) {
